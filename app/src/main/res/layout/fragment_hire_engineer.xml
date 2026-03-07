@@ -3,25 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerEngineers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <include layout="@layout/engineer_card" />
-        <include layout="@layout/engineer_card" />
-        <include layout="@layout/engineer_card" />
-        <include layout="@layout/engineer_card" />
-        <include layout="@layout/engineer_card" />
-        <include layout="@layout/engineer_card" />
-        <include layout="@layout/engineer_card" />
-
-    </LinearLayout>
+        android:clipToPadding="false"
+        tools:listitem="@layout/engineer_card"
+        tools:itemCount="8"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

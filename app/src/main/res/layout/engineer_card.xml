@@ -2,10 +2,8 @@
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="140dp"
-    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
     app:cardCornerRadius="12dp"
     android:theme="@style/ThemeOverlay.MaterialComponents.Light"
     app:cardElevation="12dp"
@@ -13,15 +11,14 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:padding="16dp">
+        android:layout_height="100dp"
+        android:background="@color/white">
 
         <ImageView
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:background="@color/white_gray"
@@ -62,28 +59,27 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="250dp"
             android:fontFamily="@font/russo"
             android:text="Инженер"
+            android:layout_marginLeft="150dp"
+            android:paddingTop="3dp"
             android:textColor="@color/black"
             android:textSize="24sp"
-            android:paddingStart="110dp"
-            app:layout_constraintStart_toEndOf="@id/head"
+            app:layout_constraintStart_toStartOf="@id/head"
             app:layout_constraintTop_toTopOf="parent" />
         <TextView
             android:id="@+id/reliability"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="250dp"
+            android:layout_marginStart="150dp"
             android:fontFamily="@font/russo"
+            android:layout_marginTop="3dp"
             android:text="Надёжность: "
             android:textColor="@color/gray"
             android:textSize="14sp"
-            android:paddingStart="110dp"
             android:textStyle="italic"
-            android:paddingTop="55dp"
-            app:layout_constraintStart_toEndOf="@id/head"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintStart_toStartOf="@id/head"
+            app:layout_constraintTop_toBottomOf="@id/profession" />
         <TextView
             android:id="@+id/reliability_level"
             android:layout_width="wrap_content"
@@ -91,11 +87,11 @@
             android:fontFamily="@font/russo"
             android:text="60"
             android:textColor="@color/black"
+            android:layout_marginTop="3dp"
             android:textSize="14sp"
             android:textStyle="italic"
-            android:paddingTop="55dp"
             app:layout_constraintStart_toEndOf="@id/reliability"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintTop_toBottomOf="@id/profession"/>
         <TextView
             android:id="@+id/arrow2"
             android:layout_width="wrap_content"
@@ -104,35 +100,33 @@
             android:text="➤"
             android:textColor="@color/dark_green"
             android:textSize="14sp"
+            android:layout_marginBottom="3dp"
             android:textStyle="italic"
-            android:paddingTop="53dp"
             app:layout_constraintStart_toEndOf="@id/reliability_level"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintBottom_toTopOf="@id/experience"/>
         <TextView
             android:id="@+id/reliability_potential_level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/russo"
             android:text="77"
+            android:layout_marginTop="3dp"
             android:textColor="@color/dark_green"
             android:textSize="14sp"
             android:textStyle="italic"
-            android:paddingTop="55dp"
             app:layout_constraintStart_toEndOf="@id/arrow2"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintTop_toBottomOf="@id/profession"/>
         <TextView
             android:id="@+id/profession"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="250dp"
+            android:layout_marginStart="150dp"
             android:fontFamily="@font/russo"
             android:text="Механик: "
             android:textColor="@color/gray"
             android:textSize="14sp"
-            android:paddingStart="110dp"
             android:textStyle="italic"
-            android:paddingTop="35dp"
-            app:layout_constraintStart_toEndOf="@id/head"
+            app:layout_constraintStart_toStartOf="@id/head"
             app:layout_constraintTop_toBottomOf="@id/name" />
         <TextView
             android:id="@+id/profession_level"
@@ -141,9 +135,9 @@
             android:fontFamily="@font/russo"
             android:text="68"
             android:textColor="@color/black"
+
             android:textSize="14sp"
             android:textStyle="italic"
-            android:paddingTop="35dp"
             app:layout_constraintStart_toEndOf="@id/profession"
             app:layout_constraintTop_toBottomOf="@id/name" />
         <TextView
@@ -153,11 +147,11 @@
             android:fontFamily="@font/russo"
             android:text="➤"
             android:textColor="@color/dark_green"
+            android:paddingBottom="3dp"
             android:textSize="14sp"
             android:textStyle="italic"
-            android:paddingTop="33dp"
             app:layout_constraintStart_toEndOf="@id/profession_level"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintBottom_toTopOf="@id/reliability" />
         <TextView
             android:id="@+id/profession_potential_level"
             android:layout_width="wrap_content"
@@ -167,23 +161,20 @@
             android:textColor="@color/dark_green"
             android:textSize="14sp"
             android:textStyle="italic"
-            android:paddingTop="35dp"
             app:layout_constraintStart_toEndOf="@id/arrow"
             app:layout_constraintTop_toBottomOf="@id/name" />
         <TextView
             android:id="@+id/experience"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="250dp"
             android:fontFamily="@font/russo"
             android:text="Опыт: "
+            android:layout_marginTop="3dp"
             android:textColor="@color/gray"
             android:textSize="14sp"
-            android:paddingStart="110dp"
             android:textStyle="italic"
-            android:paddingTop="75dp"
-            app:layout_constraintStart_toEndOf="@id/head"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintTop_toBottomOf="@id/reliability"
+            app:layout_constraintStart_toStartOf="@id/name"/>
         <TextView
             android:id="@+id/experince_level"
             android:layout_width="wrap_content"
@@ -193,19 +184,22 @@
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="italic"
-            android:paddingTop="75dp"
             app:layout_constraintStart_toEndOf="@id/experience"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintTop_toTopOf="@id/experience"/>
         <Button
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/buy"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:text="Купить"
+            android:layout_marginRight="25dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:drawableTop="@drawable/ic_buy"
+            android:paddingTop="7dp"
+            android:drawableTint="@color/white"
             android:fontFamily="@font/russo"
-            android:backgroundTint="@color/green"
+            android:backgroundTint="@color/yellow"
             android:layout_marginBottom="8dp"/>
         <TextView
             android:id="@+id/price"
@@ -216,7 +210,7 @@
             android:textColor="@color/yellow"
             android:textSize="14sp"
             android:textStyle="italic"
-            android:paddingTop="75dp"
+            android:paddingTop="45dp"
             app:layout_constraintStart_toStartOf="@id/buy"
             app:layout_constraintEnd_toEndOf="@id/buy"
             app:layout_constraintTop_toTopOf="@id/buy" />
