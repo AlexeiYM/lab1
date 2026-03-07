@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Главное меню"
+        android:fontFamily="@font/russo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Начать гонку"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/green"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_buy_components"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Купить комплектующие"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_assemble_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Собрать болид"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_hire_engineer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нанять инженера"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_hire_pilot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нанять пилота"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/blue"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_check_cars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Просмотреть болиды"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/purple"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_check_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Просмотреть команду"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/purple"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_check_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Просмотреть статистику гонок"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/purple"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_check_teams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Просмотреть другие команды"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/purple"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_check_other_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Просмотреть другие результаты"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/purple"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/button_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выход"
+        android:fontFamily="@font/russo"
+        android:backgroundTint="@color/red"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

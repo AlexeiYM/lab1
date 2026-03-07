@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation.xml"
+    app:startDestination="@id/mainMenuFragment">
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.mashinki.MainMenuFragment"
+        android:label="MainMenuFragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_assembleCarFragment"
+            app:destination="@id/assembleCarFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_buyComponentsFragment"
+            app:destination="@id/buyComponentsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_checkOtherResultsFragment"
+            app:destination="@id/checkOtherResultsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_checkTeamsFragment"
+            app:destination="@id/checkTeamsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_hireEngineerFragment"
+            app:destination="@id/hireEngineerFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_checkStatsFragment"
+            app:destination="@id/checkStatsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_hirePilotFragment"
+            app:destination="@id/hirePilotFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_checkCarsFragment"
+            app:destination="@id/checkCarsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_checkTeamFragment"
+            app:destination="@id/checkTeamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/assembleCarFragment"
+        android:name="com.example.mashinki.AssembleCarFragment"
+        android:label="AssembleCarFragment" />
+    <fragment
+        android:id="@+id/buyComponentsFragment"
+        android:name="com.example.mashinki.BuyComponentsFragment"
+        android:label="BuyComponentsFragment" />
+    <fragment
+        android:id="@+id/checkOtherResultsFragment"
+        android:name="com.example.mashinki.CheckOtherResultsFragment"
+        android:label="CheckOtherResultsFragment" />
+    <fragment
+        android:id="@+id/checkStatsFragment"
+        android:name="com.example.mashinki.CheckStatsFragment"
+        android:label="CheckStatsFragment" />
+    <fragment
+        android:id="@+id/checkTeamsFragment"
+        android:name="com.example.mashinki.CheckTeamsFragment"
+        android:label="CheckTeamsFragment" />
+    <fragment
+        android:id="@+id/hireEngineerFragment"
+        android:name="com.example.mashinki.HireEngineerFragment"
+        android:label="HireEngineerFragment" />
+    <fragment
+        android:id="@+id/hirePilotFragment"
+        android:name="com.example.mashinki.HirePilotFragment"
+        android:label="HirePilotFragment" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.mashinki.StartFragment"
+        android:label="StartFragment" />
+    <fragment
+        android:id="@+id/checkCarsFragment"
+        android:name="com.example.mashinki.CheckCarsFragment"
+        android:label="CheckCarsFragment" />
+    <fragment
+        android:id="@+id/checkTeamFragment"
+        android:name="com.example.mashinki.CheckTeamFragment"
+        android:label="CheckTeamFragment" />
+</navigation>
