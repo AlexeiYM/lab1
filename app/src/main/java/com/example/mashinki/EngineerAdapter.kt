@@ -1,27 +1,34 @@
 package com.example.mashinki
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mashinki.databinding.EngineerCardBinding
 
 class EngineerAdapter : RecyclerView.Adapter<EngineerViewHolder>() {
 
-    val data = mutableListOf<Engineer>()
+    private val data = mutableListOf<Engineer>()
+
+    fun setNewData(newData: List<Engineer>) {
+        data.clear()
+        data.addAll(newData)
+        notifyDataSetChanged()
+    }
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
     ): EngineerViewHolder {
-        TODO("Not yet implemented")
+        val binding = EngineerCardBinding.inflate(LayoutInflater.from(parent.context))
+        return EngineerViewHolder(binding)
     }
 
     override fun onBindViewHolder(
         holder: EngineerViewHolder,
         position: Int
     ) {
-        TODO("Not yet implemented")
+        holder.bind(data[position])
     }
 
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
-    }
+    override fun getItemCount() = data.size
 }

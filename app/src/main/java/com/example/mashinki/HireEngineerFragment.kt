@@ -11,6 +11,7 @@ import com.example.mashinki.databinding.FragmentHireEngineerBinding
 class HireEngineerFragment : Fragment(R.layout.fragment_hire_engineer) {
     private var _binding: FragmentHireEngineerBinding? = null
     private val binding get() = _binding!!
+    private val engineerAdapter = EngineerAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,6 +26,9 @@ class HireEngineerFragment : Fragment(R.layout.fragment_hire_engineer) {
         super.onViewCreated(view, savedInstanceState)
         with(binding.recyclerEngineers) {
             layoutManager = LinearLayoutManager(context)
+            adapter = engineerAdapter
+            addItemDecoration(VerticalSpaceItemDecoration(10))
+            engineerAdapter.setNewData(listOf())
         }
     }
 }
