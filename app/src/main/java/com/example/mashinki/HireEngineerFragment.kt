@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mashinki.databinding.FragmentHireEngineerBinding
@@ -12,7 +13,8 @@ import com.example.mashinki.databinding.FragmentHireEngineerBinding
 class HireEngineerFragment : Fragment(R.layout.fragment_hire_engineer) {
     private var _binding: FragmentHireEngineerBinding? = null
     private val binding get() = _binding!!
-    private val engineerAdapter = EngineerAdapter()
+    private val viewModel: PlayerViewModel by activityViewModels()
+    private val engineerAdapter = EngineerAdapter { crew -> viewModel.purchaseCrew(crew) }
 
     override fun onCreateView(
         inflater: LayoutInflater,

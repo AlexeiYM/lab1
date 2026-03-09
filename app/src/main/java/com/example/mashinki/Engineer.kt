@@ -1,19 +1,28 @@
 package com.example.mashinki
 
 class Engineer(
-    override val id: Int,
-    override val name: String,
-    override val owner: String,
-    override val psychicLevel: Int,
-    override val price: Int,
-    val hairColor: HairColor,
-    val favoriteTShirt: TShirtColor,
-    val experience: Experience,
-    val reliabilityLevel: Int,
-    val potentialReliabilityLevel: Int,
-    val professionLevel: Int,
-    val potentialProfessionLevel: Int,
-    val profession: Profession = Profession.MECHANIC
+    id: Int,
+    name: String,
+    owner: Team,
+    psychicLevel: Int,
+    price: Int,
+    private val hairColor: HairColor,
+    private val favoriteTShirt: TShirtColor,
+    private var experience: Experience,
+    private var reliabilityLevel: Int,
+    private val potentialReliabilityLevel: Int,
+    private var professionLevel: Int,
+    private val potentialProfessionLevel: Int,
+    private val profession: Profession = Profession.MECHANIC
 ) : Crew(
-    id, owner, name, psychicLevel, price
-)
+    id, name, owner, psychicLevel, price
+) {
+    fun getHairColor() = hairColor
+    fun getFavoriteTShirt() = favoriteTShirt
+    fun getExperience() = experience
+    fun getReliabilityLevel() = reliabilityLevel
+    fun getPotentialReliabilityLevel() = potentialReliabilityLevel
+    fun getProfessionLevel() = professionLevel
+    fun getPotentialProfessionLevel() = potentialProfessionLevel
+    fun getProfession() = profession
+}

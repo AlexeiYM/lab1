@@ -1,10 +1,18 @@
 package com.example.mashinki
 
 abstract class Crew(
-    open val id: Int,
-    open val name: String,
-    open val owner: String, //временно
-    open val psychicLevel: Int,
-    open val price: Int
+    protected val id: Int,
+    protected val name: String,
+    protected var owner: Team,
+    protected var psychicLevel: Int,
+    protected val price: Int
 ) {
+    open fun setNewOwner(newOwner: Team): Unit {
+        owner = newOwner
+    }
+    open fun getId() = id
+    open fun getName() = name
+    open fun getOwner() = owner
+    open fun getPsychicLevel() = psychicLevel
+    open fun getPrice() = price
 }

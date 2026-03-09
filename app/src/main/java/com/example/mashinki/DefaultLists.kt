@@ -5,7 +5,7 @@ object DefaultLists {
         Engineer(
             id = 1,
             name = "Майкл Афтон",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 450,
             hairColor = HairColor.BLACK,
@@ -20,7 +20,7 @@ object DefaultLists {
         Engineer(
             id = 2,
             name = "Лёва Пакетик",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 25,
             hairColor = HairColor.FAIR2,
@@ -35,7 +35,7 @@ object DefaultLists {
         Engineer(
             id = 3,
             name = "Егор Топор",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 280,
             hairColor = HairColor.FAIR1,
@@ -50,7 +50,7 @@ object DefaultLists {
         Engineer(
             id = 4,
             name = "Тоха Телега",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 300,
             hairColor = HairColor.BLOND,
@@ -65,7 +65,7 @@ object DefaultLists {
         Engineer(
             id = 5,
             name = "Витянь Жиган",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 35,
             hairColor = HairColor.FAIR2,
@@ -80,7 +80,7 @@ object DefaultLists {
         Engineer(
             id = 6,
             name = "Савелий Зебра",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 180,
             hairColor = HairColor.BLACK,
@@ -95,7 +95,7 @@ object DefaultLists {
         Engineer(
             id = 7,
             name = "Женя Мозг",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 950,
             hairColor = HairColor.GRAY,
@@ -110,7 +110,7 @@ object DefaultLists {
         Engineer(
             id = 8,
             name = "Гога Мрачный",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 210,
             hairColor = HairColor.BLOND,
@@ -125,7 +125,7 @@ object DefaultLists {
         Engineer(
             id = 9,
             name = "Даня Бородач",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 340,
             hairColor = HairColor.BLACK,
@@ -140,7 +140,7 @@ object DefaultLists {
         Engineer(
             id = 9,
             name = "Миша Сапог",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 80,
             hairColor = HairColor.FAIR1,
@@ -155,7 +155,7 @@ object DefaultLists {
         Engineer(
             id = 10,
             name = "Денис Табурет",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 70,
             hairColor = HairColor.FAIR2,
@@ -170,7 +170,7 @@ object DefaultLists {
         Engineer(
             id = 11,
             name = "Толян Качок",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 260,
             hairColor = HairColor.FAIR1,
@@ -185,7 +185,7 @@ object DefaultLists {
         Engineer(
             id = 12,
             name = "Толя Сладкий",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 320,
             hairColor = HairColor.BLACK,
@@ -200,7 +200,7 @@ object DefaultLists {
         Engineer(
             id = 13,
             name = "Виталя Вупсен",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 350,
             hairColor = HairColor.GRAY,
@@ -215,7 +215,7 @@ object DefaultLists {
         Engineer(
             id = 14,
             name = "Сеня Огрызок",
-            owner = "",
+            owner = Team.NONE,
             psychicLevel = 50,
             price = 95,
             hairColor = HairColor.FAIR1,

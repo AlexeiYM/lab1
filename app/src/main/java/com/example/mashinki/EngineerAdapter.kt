@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mashinki.databinding.EngineerCardBinding
 
-class EngineerAdapter : RecyclerView.Adapter<EngineerViewHolder>() {
+class EngineerAdapter(private val buyCallback: (Crew) -> Boolean) : RecyclerView.Adapter<EngineerViewHolder>() {
 
     private val data = mutableListOf<Engineer>()
 
@@ -20,7 +20,16 @@ class EngineerAdapter : RecyclerView.Adapter<EngineerViewHolder>() {
         viewType: Int
     ): EngineerViewHolder {
         val binding = EngineerCardBinding.inflate(LayoutInflater.from(parent.context))
-        return EngineerViewHolder(binding)
+        return EngineerViewHolder(binding).apply {
+            binding.buy.setOnClickListener {
+                handleBuyClick(adapterPosition)
+            }
+        }
+    }
+
+    private fun handleBuyClick(position: Int) {
+        buyCallback(data[position])
+        data.remove(data[position])
     }
 
     override fun onBindViewHolder(
