@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mashinki.databinding.FragmentHireEngineerBinding
 
@@ -24,11 +25,16 @@ class HireEngineerFragment : Fragment(R.layout.fragment_hire_engineer) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        bindButtons()
         with(binding.recyclerEngineers) {
             layoutManager = LinearLayoutManager(context)
             adapter = engineerAdapter
             addItemDecoration(VerticalSpaceItemDecoration(10))
-            engineerAdapter.setNewData(listOf())
+            engineerAdapter.setNewData(DefaultLists.getDefaultEngineersList())
         }
+    }
+
+    fun bindButtons() = with(binding) {
+        back.setOnClickListener { findNavController().popBackStack() }
     }
 }

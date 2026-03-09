@@ -1,6 +1,6 @@
 package com.example.mashinki
 
-enum class Experience(text: String) {
+enum class Experience(val text: String) {
     NO("ОТСУТСТВУЕТ"),
     INTERN("СТАЖЁР"),
     NEWBIE("НОВИЧОК"),

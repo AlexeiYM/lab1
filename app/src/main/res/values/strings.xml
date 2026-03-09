@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">mashinki</string>
+    <string name="money">%1$dC</string>
+    <string name="profession">"%1$s: "</string>
 </resources>

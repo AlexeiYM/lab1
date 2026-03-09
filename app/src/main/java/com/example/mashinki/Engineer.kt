@@ -2,6 +2,7 @@ package com.example.mashinki
 
 class Engineer(
     override val id: Int,
+    override val name: String,
     override val owner: String,
     override val psychicLevel: Int,
     override val price: Int,
@@ -14,5 +15,5 @@ class Engineer(
     val potentialProfessionLevel: Int,
     val profession: Profession = Profession.MECHANIC
 ) : Crew(
-    id, owner, psychicLevel, price
+    id, owner, name, psychicLevel, price
 )

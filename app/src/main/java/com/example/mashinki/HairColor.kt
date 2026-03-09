@@ -1,8 +1,9 @@
 package com.example.mashinki
 
-enum class HairColor(drawable: Int) {
+enum class HairColor(val drawable: Int) {
     BLOND(R.drawable.blond),
-    FAIR(R.drawable.fair),
+    FAIR1(R.drawable.hair),
+    FAIR2(R.drawable.fair),
     GRAY(R.drawable.gray),
     BLACK(R.drawable.black)
 }
