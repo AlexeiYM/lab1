@@ -10,9 +10,9 @@ abstract class Crew(
     open fun setNewOwner(newOwner: Team): Unit {
         owner = newOwner
     }
-    open fun getId() = id
-    open fun getName() = name
-    open fun getOwner() = owner
-    open fun getPsychicLevel() = psychicLevel
-    open fun getPrice() = price
+    open fun getCrewId() = id
+    open fun getCrewName() = name
+    open fun getCrewOwner() = owner
+    open fun getCrewPsychicLevel() = psychicLevel
+    open fun getCrewPrice() = price
 }

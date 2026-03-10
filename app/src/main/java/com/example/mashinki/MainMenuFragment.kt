@@ -93,6 +93,12 @@ class MainMenuFragment : Fragment() {
                 null
             )
         }
+        binding.buttonCheckSponsor.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_mainMenuFragment_to_checkSponsor,
+                null
+            )
+        }
         binding.buttonExit.setOnClickListener {
             requireActivity().finish()
         }

@@ -6,9 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mashinki.databinding.FragmentHireEngineerBinding
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 class HireEngineerFragment : Fragment(R.layout.fragment_hire_engineer) {
     private var _binding: FragmentHireEngineerBinding? = null
@@ -32,11 +35,24 @@ class HireEngineerFragment : Fragment(R.layout.fragment_hire_engineer) {
             layoutManager = LinearLayoutManager(context)
             adapter = engineerAdapter
             addItemDecoration(VerticalSpaceItemDecoration(10))
-            engineerAdapter.setNewData(DefaultLists.getDefaultEngineersList())
+            engineerAdapter.setNewData(viewModel.availableEngineers.value)
         }
+        observeBalance()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        viewModel.setNewAvailableEngineersList(engineerAdapter.getData())
+        _binding = null
     }
 
     fun bindButtons() = with(binding) {
         back.setOnClickListener { findNavController().popBackStack() }
+    }
+
+    private fun observeBalance() {
+        viewModel.balance.observe(viewLifecycleOwner) { newBalance ->
+            binding.balance.text = getString(R.string.money, newBalance)
+        }
     }
 }
