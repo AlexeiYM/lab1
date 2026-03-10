@@ -35,68 +35,57 @@ class MainMenuFragment : Fragment() {
     private fun bindButtons(binding: MainMenuFragmentBinding) {
         binding.buttonStart.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_startFragment,
-                null
+                R.id.action_mainMenuFragment_to_startFragment
             )
         }
         binding.buttonHirePilot.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_hirePilotFragment,
-                null
+                R.id.action_mainMenuFragment_to_hirePilotFragment
             )
         }
         binding.buttonHireEngineer.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_hireEngineerFragment,
-                null
+                R.id.action_mainMenuFragment_to_hireEngineerFragment
             )
         }
         binding.buttonCheckTeams.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_checkTeamsFragment,
-                null
+                R.id.action_mainMenuFragment_to_checkTeamsFragment
             )
         }
         binding.buttonCheckStats.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_checkStatsFragment,
-                null
+                R.id.action_mainMenuFragment_to_checkStatsFragment
             )
         }
         binding.buttonCheckOtherResults.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_checkOtherResultsFragment,
-                null
+                R.id.action_mainMenuFragment_to_checkOtherResultsFragment
             )
         }
         binding.buttonCheckCars.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_checkCarsFragment,
-                null
+                R.id.action_mainMenuFragment_to_checkCarsFragment
             )
         }
         binding.buttonBuyComponents.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_buyComponentsFragment,
-                null
+                R.id.action_mainMenuFragment_to_buyComponentsFragment
             )
         }
         binding.buttonAssembleCar.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_assembleCarFragment,
-                null
+                R.id.action_mainMenuFragment_to_assembleCarFragment
             )
         }
         binding.buttonCheckTeam.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_checkTeamFragment,
-                null
+                R.id.action_mainMenuFragment_to_checkTeamFragment
             )
         }
         binding.buttonCheckSponsor.setOnClickListener {
             findNavController().navigate(
-                R.id.action_mainMenuFragment_to_checkSponsor,
-                null
+                R.id.action_mainMenuFragment_to_checkSponsor
             )
         }
         binding.buttonExit.setOnClickListener {

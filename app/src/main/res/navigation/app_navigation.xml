@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/app_navigation.xml"
-    app:startDestination="@id/createTeamFragment">
+    app:startDestination="@id/chooseSponsorFragment">
     <fragment
         android:id="@+id/mainMenuFragment"
         android:name="com.example.mashinki.MainMenuFragment"
@@ -92,5 +92,13 @@
         <action
             android:id="@+id/action_createTeamFragment_to_mainMenuFragment"
             app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseSponsorFragment"
+        android:name="com.example.mashinki.ChooseSponsorFragment"
+        android:label="ChooseSponsorFragment" >
+        <action
+            android:id="@+id/action_chooseSponsorFragment_to_createTeamFragment"
+            app:destination="@id/createTeamFragment" />
     </fragment>
 </navigation>

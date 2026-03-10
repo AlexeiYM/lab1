@@ -3,4 +3,6 @@
     <string name="money">%1$dC</string>
     <string name="profession">"%1$s: "</string>
     <string name="no_money_for_crew">Недостаточно средств для найма</string>
+    <string name="money_range">%1$d-%2$dC</string>
+    <string name="extra_award_guide">"Доп. выплата (%1$s): "</string>
 </resources>
